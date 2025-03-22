@@ -8,7 +8,6 @@ setup(
     author="KusokMedi",
     author_email="matvejs.stepanovs116@gmail.com",
     description="Простая библиотека с полезными функциями..",
-    long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/KusokMedi/pytemplatecode",
     classifiers=[
