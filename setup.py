@@ -1,13 +1,16 @@
 from setuptools import setup, find_packages
 
+with open("README.md", "r", encoding="utf-8") as f:
+    long_description = f.read()
+
 setup(
     name="PyTemplateCode",
-    version="0.1",
+    version="0.11",
     packages=find_packages(),
     install_requires=[],
     author="KusokMedi",
     author_email="matvejs.stepanovs116@gmail.com",
-    description="Простая библиотека с полезными функциями..",
+    long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/KusokMedi/pytemplatecode",
     classifiers=[
