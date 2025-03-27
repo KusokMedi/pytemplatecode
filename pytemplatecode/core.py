@@ -3,25 +3,24 @@ import sys
 
 def timer(seconds):
     if not isinstance(seconds, int):
-        raise ValueError("Ошибка: Введите целое число секунд. Если нужно дробное время, используйте библиотеку time.")
+        raise ValueError("Error: Please enter an integer number of seconds. If you need fractional time, use the time library.")
 
     for i in range(seconds, 0, -1):
-        print(f"{i} секунд осталось...")
+        print(f"{i} seconds remaining...")
         time.sleep(1)
 
-    print("Время вышло!")
+    print("Time's up!")
 
 def current_time(format="%Y-%m-%d %H:%M:%S"):
     return time.strftime(format, time.localtime())
 
-def inputint(prompt="Введите число: "):
+def inputint(prompt="Enter a number: "):
     while True:
         user_input = input(prompt)
-        if user_input.isdigit():  # Проверка, что введено целое число
+        if user_input.isdigit():  # Check if the input is an integer
             return int(user_input)
         else:
-            print("Ошибка: Пожалуйста, введите целое число.")
-
+            print("Error: Please enter an integer.")
 
 def start(name="Your project name", delay=0.25):
     frame = "-" * len(name) + "--"
@@ -32,7 +31,7 @@ def start(name="Your project name", delay=0.25):
         f"[{frame}]\n"
     ]
 
-    # Печать начального оформления по одному символу
+    # Print the initial banner character by character
     for line in lines:
         for char in line:
             if char == " ":
@@ -42,7 +41,7 @@ def start(name="Your project name", delay=0.25):
             elif char == "-":
                 sys.stdout.write(char)
                 sys.stdout.flush()
-                time.sleep(delay/3)
+                time.sleep(delay / 3)
             else:
                 sys.stdout.write(char)
                 sys.stdout.flush()
@@ -67,9 +66,10 @@ def end(end_text="End of code!", delay=0.25):
             elif char == "-":
                 sys.stdout.write(char)
                 sys.stdout.flush()
-                time.sleep(delay/5)
+                time.sleep(delay / 5)
             else:
                 sys.stdout.write(char)
                 sys.stdout.flush()
                 time.sleep(delay)
         print()
+
