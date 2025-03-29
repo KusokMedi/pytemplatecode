@@ -4,7 +4,7 @@ This is a simple Python template project for beginners. It includes some useful 
 
 ## Functions List
 
-1. timer(seconds)](#1-timer)
+1. timer(seconds)
 2. current_time(format="%Y-%m-%d %H:%M:%S")
 3. inputint(prompt="Enter a number: ")
 4. start(name="Your project name", delay=0.25)
