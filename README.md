@@ -4,13 +4,13 @@ This is a simple Python template project for beginners. It includes some useful 
 
 ## Functions List
 
-1. [timer(seconds)](#1-timer)
-2. [current_time(format="%Y-%m-%d %H:%M:%S")](#2-current_time)
-3. [inputint(prompt="Enter a number: ")](#3-inputint)
-4. [start(name="Your project name", delay=0.25)](#4-start)
-5. [end(end_text="End of code!", delay=0.25)](#5-end)
-6. [crash(seconds=0)](#6-crash)
-7. [printedit(*args)](#7-printedit)
+1. timer(seconds)](#1-timer)
+2. current_time(format="%Y-%m-%d %H:%M:%S")
+3. inputint(prompt="Enter a number: ")
+4. start(name="Your project name", delay=0.25)
+5. end(end_text="End of code!", delay=0.25)
+6. crash(seconds=0)
+7. printedit(*args)
 
 ## Functions
 
