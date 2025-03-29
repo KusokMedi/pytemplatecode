@@ -1,51 +1,58 @@
-
 # PyTemplateCode
 
-**PyTemplateCode** is a simple Python template project for beginners. It includes useful functions such as a timer, current time fetcher, input validation, and simple decorative print functions.
+This is a simple Python template project for beginners. It includes some useful functions, including a timer, current time fetcher, input validation, and simple decorative print functions.
+
+## Functions List
+
+1. [timer(seconds)](#1-timer)
+2. [current_time(format="%Y-%m-%d %H:%M:%S")](#2-current_time)
+3. [inputint(prompt="Enter a number: ")](#3-inputint)
+4. [start(name="Your project name", delay=0.25)](#4-start)
+5. [end(end_text="End of code!", delay=0.25)](#5-end)
+6. [crash(seconds=0)](#6-crash)
+7. [printedit(*args)](#7-printedit)
 
 ## Functions
 
-### 1. **Timer Functionality**
+### 1. `timer(seconds)`
+Counts down from the specified number of seconds and prints the remaining time every second.
 
-#### `timer(seconds)`
-This function counts down from a specified number of seconds and prints the remaining time every second.
+- `seconds` (int): The number of seconds to count down.
+- Raises a `ValueError` if the input is not an integer.
 
-- **Arguments:**
-  - `seconds` (int): The number of seconds to count down.
-- **Exceptions:**
-  - `ValueError`: If the input is not an integer.
+### 2. `current_time(format="%Y-%m-%d %H:%M:%S")`
+Returns the current time formatted according to the specified format.
 
-### 2. **Current Time Functionality**
+- `format` (str): The format in which to return the current time. Default is "%Y-%m-%d %H:%M:%S".
 
-#### `current_time(format="%Y-%m-%d %H:%M:%S")`
-This function returns the current time formatted according to the specified format.
+### 3. `inputint(prompt="Enter a number: ")`
+Prompts the user to enter a valid integer and returns it. If the user enters a non-integer value, an error message is displayed.
 
-- **Arguments:**
-  - `format` (str): The format in which to return the current time. The default is "%Y-%m-%d %H:%M:%S".
+- `prompt` (str): The prompt message displayed to the user.
 
-### 3. **Input Validation**
+### 4. `start(name="Your project name", delay=0.25)`
+Displays a decorated banner at the beginning of the program with customizable text and delay time.
 
-#### `inputint(prompt="Enter a number: ")`
-This function prompts the user to enter a valid integer and returns it. If the user enters a non-integer value, an error message is displayed.
+- `name` (str): The name of your project that will be displayed in the banner.
+- `delay` (float): The delay in seconds between each character printed.
 
-- **Arguments:**
-  - `prompt` (str): The prompt message displayed to the user.
+### 5. `end(end_text="End of code!", delay=0.25)`
+Prints an end message with a decorated banner.
 
-### 4. **Decorative Print Functions**
+- `end_text` (str): The message to display at the end.
+- `delay` (float): The delay in seconds between each character printed.
 
-#### `start(name="Your project name", delay=0.25)`
-This function displays a decorated banner at the beginning of the program with customizable text and delay time.
+### 6. `crash(seconds=0)`
+Simulates a crash after a specified number of seconds with a countdown and "CRASHED" message.
 
-- **Arguments:**
-  - `name` (str): The name of your project that will be displayed in the banner.
-  - `delay` (float): The delay in seconds between each character printed.
+- `seconds` (int or float): The number of seconds until the crash.
+- Raises a `ValueError` if seconds is negative or not a valid number.
 
-#### `end(end_text="End of code!", delay=0.25)`
-This function prints an end message with a decorated banner.
+### 7. `printedit(*args)`
+Dynamically updates the printed text in the same line, displaying elements sequentially. If any error occurs, prints corresponding error message and continues.
 
-- **Arguments:**
-  - `end_text` (str): The message to display at the end.
-  - `delay` (float): The delay in seconds between each character printed.
+- First argument (optional) - text color (str).
+- Remaining arguments - alternating list of text (str) and delay (float).
 
 ## Installation
 
@@ -60,7 +67,7 @@ pip install pytemplatecode
 Here is a quick example of how you can use the functions in this package:
 
 ```python
-from pytemplatecode import timer, current_time, inputint, start, end
+from pytemplatecode import timer, current_time, inputint, start, end, crash, printedit
 
 # Start the project with a banner
 start(name="My Awesome Project")
@@ -77,4 +84,10 @@ timer(5)
 
 # End the project with a banner
 end(end_text="Project Completed!")
+
+# Simulate a crash
+crash(5)
+
+# Print text dynamically
+printedit("blue", "Starting", 1, "Running", 1, "Done!", 1)
 ```
