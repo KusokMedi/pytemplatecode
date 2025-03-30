@@ -5,11 +5,12 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setup(
     name="PyTemplateCode",
-    version="0.21",
+    version="0.22",
     packages=find_packages(),
     install_requires=[],
     author="KusokMedi",
     author_email="matvejs.stepanovs116@gmail.com",
+    description="A simple Python template project for beginners with useful functions.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/KusokMedi/pytemplatecode",

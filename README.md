@@ -12,6 +12,10 @@ This is a simple Python template project for beginners. It includes some useful 
 6. crash(seconds=0)
 7. printedit(*args)
 
+## GitHub Repository!
+
+You can find the source code and contribute to the project on [GitHub](https://github.com/KusokMedi/pytemplatecode).
+
 ## Functions
 
 ### 1. `timer(seconds)`
