@@ -107,7 +107,7 @@ end(end_text="Project Completed!")
 # Simulate a crash (deleate line 97 to cool dialog :3)
 crash(5)
 
-# Code don't work :0
+# Code didn't work :0
 print("Human: What the hell?")
 input("\nPress enter to continue\n")
 print("You: Hell the what..")
