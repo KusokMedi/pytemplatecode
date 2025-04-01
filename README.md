@@ -66,6 +66,17 @@ Dynamically updates the printed text in the same line, displaying elements seque
 - First argument (optional) - text color (str).
 - Remaining arguments - alternating list of text (str) and delay (float).
 
+#### Colors
+
+- 🔴 Red  
+- 🟢 Green  
+- 🟡 Yellow  
+- 🔵 Blue  
+- 🟣 Magenta  
+- 🔵 Cyan  
+- ⚪ White  
+- ❌ Reset  
+
 ## Usage
 
 Here is a quick example of how you can use the functions in this package:
