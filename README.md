@@ -99,5 +99,5 @@ crash(5)
 # Code don't work :0
 print("Human: What the hell?")
 input("\nPress enter to continue\n")
-print("You Hell the what..")
+print("You: Hell the what..")
 ```
