@@ -66,7 +66,7 @@ Dynamically updates the printed text in the same line, displaying elements seque
 - First argument (optional) - text color (str).
 - Remaining arguments - alternating list of text (str) and delay (float).
 
-#### Colors
+### Colors:
 
 - 🔴 Red  
 - 🟢 Green  
