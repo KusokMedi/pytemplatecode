@@ -2,6 +2,18 @@
 
 This is a simple Python template project for beginners. It includes some useful functions, including a timer, current time fetcher, input validation, and simple decorative print functions.
 
+## GitHub Repository!
+
+All code you can find the source code and contribute to the project on [GitHub](https://github.com/KusokMedi/pytemplatecode).
+
+## Installation
+
+You can install this package via `pip`:
+
+```
+pip install pytemplatecode
+```
+
 ## Functions List
 
 1. timer(seconds)
@@ -11,10 +23,6 @@ This is a simple Python template project for beginners. It includes some useful 
 5. end(end_text="End of code!", delay=0.25)
 6. crash(seconds=0)
 7. printedit(*args)
-
-## GitHub Repository!
-
-You can find the source code and contribute to the project on [GitHub](https://github.com/KusokMedi/pytemplatecode).
 
 ## Functions
 
@@ -58,30 +66,26 @@ Dynamically updates the printed text in the same line, displaying elements seque
 - First argument (optional) - text color (str).
 - Remaining arguments - alternating list of text (str) and delay (float).
 
-## Installation
-
-You can install this package via `pip`:
-
-```
-pip install pytemplatecode
-```
-
 ## Usage
 
 Here is a quick example of how you can use the functions in this package:
 
 ```python
-from pytemplatecode import timer, current_time, inputint, start, end, crash, printedit
+from pytemplatecode import *
+from time import sleep
 
-# Start the project with a banner
-start(name="My Awesome Project")
+# Start the project with a cool banner
+start(name="My Project + PyTemplateCode")
+
+sleep(0.25)
 
 # Display current time
-print(f"Current time: {current_time()}")
+print(f"Current time is: {current_time()}")
 
 # Prompt user for an integer
 number = inputint("Enter a number: ")
-print(f"You entered: {number}")
+
+print(f"Fine, You entered: {number}, and its very eazy to take number corectly!")
 
 # Countdown timer
 timer(5)
@@ -89,9 +93,11 @@ timer(5)
 # End the project with a banner
 end(end_text="Project Completed!")
 
-# Simulate a crash
+# Simulate a crash (deleate line 97 to cool dialog :3)
 crash(5)
 
-# Print text dynamically
-printedit("blue", "Starting", 1, "Running", 1, "Done!", 1)
+# Code don't work :0
+print("Human: What the hell?")
+input("\nPress enter to continue\n")
+print("You Hell the what..")
 ```
