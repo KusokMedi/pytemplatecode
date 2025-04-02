@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setup(
     name="PyTemplateCode",
-    version="0.22",
+    version="0.3",
     packages=find_packages(),
     install_requires=[],
     author="KusokMedi",

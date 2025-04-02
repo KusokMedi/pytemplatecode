@@ -104,7 +104,7 @@ timer(5)
 # End the project with a banner
 end(end_text="Project Completed!")
 
-# Simulate a crash (deleate line 97 to cool dialog :3)
+# Simulate a crash (deleate next line for a cool dialog :3)
 crash(5)
 
 # Code didn't work :0
